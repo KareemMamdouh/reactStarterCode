@@ -25,11 +25,10 @@
     "lint:fix": "eslint --fix . --ext .js,.vue src",
     "pre-commit": "lint-staged"
   },
-  "Lint-staged": {
-    "src/**/*.{js.jsx,json.css}": [
-      "prettier --write",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "eslintConfig": {
     "extends": [

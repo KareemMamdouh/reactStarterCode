@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix . --ext .js,.vue src",
+    "lint:fix": "eslint --fix . --ext .js,.scss src",
     "pre-commit": "lint-staged"
   },
   "husky": {

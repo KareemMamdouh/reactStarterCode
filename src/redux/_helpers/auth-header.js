@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 const Lang = localStorage.getItem('Lang')
 export function authHeaderAPI() {
   // return authorization header with jwt token

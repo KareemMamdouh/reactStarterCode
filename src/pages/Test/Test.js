@@ -1,16 +1,25 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { testAction } from 'redux/store/actions'
-
+import { useTranslation } from 'react-i18next'
+// ii18n
 function Test(props) {
   useEffect(() => {
     props.testAction()
   }, [])
+  const { t } = useTranslation() // ti18n
+
   return (
     <div className="Test">
-      data
+      {t('data')}
+
+      {/* t ('') ctrl +  alt + i */}
       {props.test?.map(x => {
-        return <div key={`s${x}`}>{x}</div>
+        return (
+          <div key={`s${x}`} className="fs-1 text-warning" data-test="sc">
+            {x}
+          </div>
+        )
       })}
     </div>
   )

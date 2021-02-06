@@ -23,7 +23,13 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix . --ext .js,.vue src",
-    "pre-commit": "pretty-quick"
+    "pre-commit": "lint-staged"
+  },
+  "Lint-staged": {
+    "src/**/*.{js.jsx,json.css}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [

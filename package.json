@@ -30,17 +30,6 @@
       "pre-commit": "npm run lint"
     }
   },
-  "lint-staged": {
-    "*.{json, js, jsx, css, scss, md}": [
-      "prettier --write"
-    ],
-    "*.{js,jsx}": [
-      "eslint --fix"
-    ],
-    "*.{css,scss}": [
-      "stylelint --fix"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "react-app",

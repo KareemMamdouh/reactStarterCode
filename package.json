@@ -25,6 +25,11 @@
     "lint:fix": "eslint --fix . --ext .js,.vue src",
     "pre-commit": "lint-staged"
   },
+  "lint-staged": {
+    "*.scss": [
+      "stylelint --syntax scss"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"

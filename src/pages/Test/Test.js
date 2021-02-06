@@ -6,7 +6,6 @@ function Test(props) {
   useEffect(() => {
   
 
-
 			
 props.testAction()
   }, [])

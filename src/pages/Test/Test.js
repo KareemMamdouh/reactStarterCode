@@ -4,7 +4,8 @@ import { testAction } from 'redux/store/actions'
 
 function Test(props) {
   useEffect(() => {
-    			props.testAction()
+    				
+props.testAction()
   }, [])
   return (
     <div className="Test">

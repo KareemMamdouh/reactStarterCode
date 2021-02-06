@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js,.jsx .",
-    "precommit": "Lint-staged"
+    "precommit": "lint-staged"
   },
   "Lint-staged": {
     "src/**/*.{js.jsx,json.css}": [

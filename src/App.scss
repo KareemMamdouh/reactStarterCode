@@ -28,9 +28,53 @@
 .fc-secondary {
   color: $secondary-color;
 }
+//font size
+.fz8 {
+  font-size: 8px;
+}
+.fz10 {
+  font-size: 10px;
+}
+.fz11 {
+  font-size: 11px;
+}
+.fz12 {
+  font-size: 12px;
+}
+.fz13 {
+  font-size: 13px;
+}
+.fz14 {
+  font-size: 14px;
+}
+.fz15 {
+  font-size: 15px;
+}
 
+.fz16 {
+  font-size: 16px;
+}
+.fz20 {
+  font-size: 20px;
+}
+.fw-bold {
+  font-weight: 600;
+}
+::placeholder {
+  font-size: 12px;
+}
 //size images
-.icon16 {
+.img12 {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+.img14 {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+.img16 {
   width: 16px;
   height: 16px;
   object-fit: contain;
@@ -60,7 +104,6 @@
   object-fit: contain;
   width: 40px;
 }
-
 .pointer {
   cursor: pointer;
 }
@@ -77,14 +120,21 @@
 .outline-none {
   outline: none;
 }
-
+// border and shadow
+.main-shadow {
+  box-shadow: 4px 4px 20px #00000029;
+}
+// PC primary-color
+.border-PC {
+  border: 1px solid $primary-color !important;
+}
 .border-bottom-PC {
   border-bottom: 2px solid $primary-color;
 }
 .b_r {
   border-radius: 10px !important;
 }
-
+// custom behavior style
 .none-btn {
   background-color: transparent;
   border: none;
@@ -92,7 +142,13 @@
     outline: transparent;
   }
 }
-
+button:focus {
+  outline: 0px;
+}
+a {
+  color: initial !important;
+  text-decoration: none !important;
+}
 //checkbox
 .checkbox {
   width: 100%;
@@ -164,4 +220,14 @@
 }
 .checkbox input[type='checkbox']:focus + label::before {
   outline: 0;
+}
+
+//  alert
+.Toastify__toast--success {
+  background-color: #25c2a0 !important;
+  color: #fff !important;
+  // font-weight: bold;
+}
+.Toastify__toast {
+  min-height: 55px !important;
 }
